@@ -1,5 +1,5 @@
 FROM python:3.7-alpine
-LABEL author=" Berking Da Quan"
+LABEL author="Berking Da Quan"
 
 ENV PYTHONUNBUFFERED 1
 
@@ -10,5 +10,5 @@ RUN mkdir /app
 WORKDIR /app
 COPY ./app /app
 
-RUN adduser user
+RUN adduser -D user
 USER user
